@@ -1,0 +1,58 @@
+#ifndef TESTERCOMMANDTYPES_H
+#define	TESTERCOMMANDTYPES_H
+
+#define CMD_LENGTH  11
+
+enum TesterCommandType {
+    NONE = 0,
+
+    DFU,
+    CONNECT,
+    FACTORY_RESET,
+    REBOOT,
+    INFO,
+    LOCK,
+    UNLOCK,
+    
+    SET_PIN,
+    SET_PINS,
+    SET_SWDIO,
+    SET_SWCLK,
+    SET_RTS,
+    SET_CTS,
+    BUTTON,
+    LED,
+    SET_PRODUCT,
+    RUN,
+    
+    WIFI_SCAN,
+    ANT,
+    CLEAR,
+
+    CELL_RSSI,
+    CELL_MODEM_ON,
+    CELL_MODEM_OFF,
+
+    CELL_START_AT,
+    CELL_AT_WRITE,
+    CELL_AT_READ,
+    CELL_STOP_AT,
+
+    GET_SIM_CCID,
+    GET_IMEI,
+
+    SEND_AT_CMD,
+
+    RF_TX_TEST,
+
+    BATTERY_INFO,
+    BATTERY_SET_CHARGE,
+
+    SET_POWER_MODE,
+    GET_FUELGAUGE_VERSION,
+    GET_PMIC_VERSION,
+    
+    END
+};
+
+#endif	/* FACTORYTESTER_H */
